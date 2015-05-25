@@ -1,0 +1,14 @@
+# Make sure your procedure has a return statement.
+
+def find_last(a,b):
+    find = a.find(b)
+    backup = find
+    while find != -1:
+        backup = find
+        find = a.find(b, find + 1)
+    return backup
+
+
+
+print find_last('aaaa', 'a')
+#>>> 3
